@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionlayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sectionlayout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.containerlayout {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+.containerlayout .contactInfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.containerlayout .contactInfo img.dynamicImageTop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerlayout .contactInfo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+
+.containerlayout .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+}
+
+
+
+.containerlayout .contactInfo .layeredImage {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    /* width: 350px; */
+    height: calc(100% - 80px);
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.containerlayout .contactInfo .smallProfileImage {
+    width: 100%;
+    /* Full width */
+    height: 70px;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover the space, maintain aspect ratio */
+    position: relative;
+    left: -200px;
+    top: 90px;
+    background: #FEFEFE;
+
+}
+
+.containerlayout .contactInfo .layeredText {
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 250px;
+    /* Adjust as needed */
+    left: -130px;
+    /* Adjust as needed */
+    background: #FEFEFE;
+    color: #000000;
+    /* Text color */
+    padding: 10px;
+    /* Spacing */
+    font-size: 15px;
+    /* Adjust font size */
+    font-weight: 400;
+    /* Adjust font weight */
+    z-index: 111;
+}
+
+
+.introduction h1 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ED2B32;
+
+}
+
+.introduction h2 {
+    width: 90%;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: left;
+
+    margin-bottom: 20px;
+    /* Space below the subheading */
+}
+
+.introduction p {
+    margin-bottom: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.introduction .highlightedStatement {
+    width: 50%;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
+    color: #ED2B32;
+}
+
+.introduction ul {
+    list-style-type: none;
+    /* Remove default list styles */
+    padding: 0;
+    /* Remove padding */
+    margin-bottom: 20px;
+    /* Space below the list */
+}
+
+.introduction li {
+    display: flex;
+    /* Flexbox for layout */
+    align-items: center;
+    /* Center align items */
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+
+.introduction li img {
+    margin-right: 10px;
+    /* Space between image and text */
+}
+
+.sidebar {
+    width: 100px;
+    height: 200px;
+    background: #E8E7E7;
+
+    top: 60%;
+    right: 15%;
+    position: absolute;
+}
+
+
+
+
+/* make the form responsive */
+@media (max-width: 1200px) {
+    .containerlayout {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .containerlayout .contactInfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .containerlayout .contactForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sectionlayout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .sectionlayout::before {
+        display: none;
+    }
+
+    .containerlayout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .containerlayout .contactForm {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .containerlayout .contactInfo {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border-radius: 0px;
+    }
+
+    .containerlayout .contactInfo ul.sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerlayout {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .containerlayout .contactInfo {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .containerlayout .contactInfo img.dynamicImageTop {
+        width: 100%;
+        height: auto;
+        /* Ensure the image maintains aspect ratio */
+        object-fit: cover;
+    }
+
+    .containerlayout .contactInfo .layeredText {
+
+        font-size: 14px;
+        /* Smaller font size on mobile */
+        padding: 15px;
+        /* Adjust padding */
+        position: absolute;
+        top: 215px;
+        text-align: left;
+    }
+
+    .containerlayout .contactInfo .smallProfileImage {
+        position: relative;
+        top: 250px;
+
+    }
+    .introduction h1
+    {
+        margin-top: 350px;
+    }
+    /* .introduction h2
+    {
+        margin-top: 20px;
+    } */
+    .introduction .highlightedStatement {
+        width: 100%;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+
+        color: #ED2B32;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 60px; /* Change height as needed */
+        background: #E8E7E7;
+        position: absolute;
+        top: 96%; /* Align it at the top */
+        right: 0; /* Align it to the right */
+        display: flex; /* Use flexbox for content alignment */
+        justify-content: flex-end; /* Aligns the content to the right */
+        align-items: center; /* Center content vertically */
+    }
+    .sidebar img {
+      
+        max-width: 50px;
+        /* Limit the size of the sidebar image */
+    }
+
+    .sidebar p {
+        padding-top: 20px;
+        margin-left: 10px;
+        /* Space between image and text */
+        font-size: 12px;
+        /* Font size for sidebar text */
+        color: #666;
+        /* Text color */
+    }
+}
